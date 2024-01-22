@@ -1,0 +1,202 @@
+<form action="">
+  <fieldset name="GeneralInformation">
+    <h1>
+      Datos Generales Completar todos los campos de este formulario, de no
+      aplicar colocar N/A
+    </h1>
+    <label>Razón Social (Nombre de la persona jurídica):</label>
+    <input type="text" name="NameOfCompany" />
+
+    <label>Lugar de Constitución (País):</label>
+    <input type="text" name="Country" />
+
+    <label>Pagina Web:</label>
+    <input type="text" name="Website" />
+
+    <br />
+
+    <label>No.de Escritura Pública:</label>
+    <input type="text" name="PublicDeedNumber" />
+
+    <label>Fecha de Escritura Pública:</label>
+    <input type="date" name="DateOfPublicDeed" />
+
+    <label>Fecha de Constitución:</label>
+    <input type="date" name="DateOfIncorporation" />
+
+    <label>Rollo / Tomo:</label>
+    <input type="text" name="RollOrVolume" />
+
+    <label>Documento:</label>
+    <input type="text" name="Document" />
+
+    <label>Ficha / Folio:</label>
+    <input type="text" name="File" />
+    <br />
+
+    <label
+      >Domicilio (Detalle exacto de su ubicación fisica (lugar donde ejecuta sus
+      actividades):</label
+    >
+    <input type="text" name="Adress" />
+
+    <label>Tipo de Entidad:</label>
+    <input type="checkbox" name="Corporation" />
+    <span>Corporación</span>
+    <input type="checkbox" value="Foundation" />
+    <span>Fundación</span>
+    <input type="checkbox" value="Escrow" />
+    <span>Fideicomiso</span>
+
+    <br />
+
+    <label>Dirección postal:</label>
+    <input type="text" name="PostalAddress" />
+    <label>Teléfono de Oficina:</label>
+    <input type="text" name="OfficeTelephone" />
+    <label>Fax:</label>
+    <input type="tel" name="Fax" />
+    <label>Otro:</label>
+    <input type="text" name="OtherAccess" />
+
+    <br />
+
+    <label>Empresa con presencia Fiscal:</label>
+    <input type="checkbox" name="Company-with-Fiscal-presence-Yes" />
+    <span>Si</span>
+    <input type="checkbox" name="Company-with-Fiscal-presence-No" />
+    <span
+      >No Operativa (en caso de no ser operativa la información la sustentarán
+      el o los beneficiarios finales).</span
+    >
+
+    <label>Tipo de cuenta:</label>
+    <input type="checkbox" name="Discrecional" />
+    <span>Discrecional</span>
+    <input type="checkbox" name="NoDiscrecional" />
+    <span>No Discrecional</span>
+  </fieldset>
+
+  <fieldset name="EconomicBeneficiaryofPersonalorNaturalAccount">
+    <h1>Beneficiario(s) económico(s) de Cuenta Persona(s) o Natural(es)</h1>
+    <label>Nombre(s):</label>
+    <input type="text" name="Name1" />
+    <input type="text" name="Name2" />
+    <input type="text" name="Name3" />
+
+    <label>Apellido(s):</label>
+    <input type="text" name="Surname1" />
+    <input type="text" name="Surname2" />
+    <input type="text" name="Surname3" />
+
+    <label>No. de Documento (ID):</label>
+    <input type="text" name="DocumentNo1" />
+    <input type="text" name="DocumentNo2" />
+    <input type="text" name="DocumentNo3" />
+  </fieldset>
+  <fieldset name="SourceofFunds">
+    <h1>Origen de Fondos</h1>
+    <p>Jurisdicciones principales de donde recibe/envía:</p>
+    <label>1-</label>
+    <input type="text" name="income1" />
+    <input type="checkbox" name="ReceiveYourCash1" />
+    <span>Recibe su Efectivo</span>
+    <input type="checkbox" name="SendYourCash1" />
+    <span>Envía su Efectivo</span>
+    <input type="checkbox" name="ReceiveYourTitles1" />
+    <span>Recibe sus Títulos</span>
+    <input type="checkbox" name="SubmitYourTitles1" />
+    <span>Envía sus Títulos</span>
+
+    <br />
+
+    <label>2-</label>
+    <input type="text" name="income2" />
+    <input type="checkbox" name="ReceiveYourCash2" />
+    <span>Recibe su Efectivo</span>
+    <input type="checkbox" name="SendYourCash2" />
+    <span>Envía su Efectivo</span>
+    <input type="checkbox" name="ReceiveYourTitles2" />
+    <span>Recibe sus Títulos</span>
+    <input type="checkbox" name="SubmitYourTitles2" />
+    <span>Envía sus Títulos</span>
+  </fieldset>
+  <fieldset name="SourceOfResourcesOrHeritage">
+    <label>Nombre del Empleador / Independiente:</label>
+    <input type="text" name="NameOfEmployer" />
+    <label>Ingreso Anual: (USD):</label>
+    <input type="number" name="IncomeUsd" />
+    <br />
+    <label>Salario Anual: (USD):</label>
+    <input type="number" name="SalaryUsd" />
+
+    <label>Años en la Empresa:</label>
+    <input type="number" name="YearsInTheCompany" />
+
+    <label>Actividad:</label>
+    <input type="checkbox" name="Professional" />
+    <span>Honorarios Profesionales</span>
+
+    <input type="checkbox" name="OwnBusiness" />
+    <span>Negocio Propio</span>
+
+    <br />
+
+    <input type="checkbox" name="Saving" />
+    <span>Ahorro</span>
+
+    <input type="checkbox" name="Pension" />
+    <span>Pensión</span>
+
+    <input type="checkbox" name="Salary" />
+    <span>Salario</span>
+
+    <label>Dividendos de Inversión:</label>
+    <input type="text" name="InvestmentDividents" />
+
+    <label>Otros:</label>
+    <input type="text" name="OtherIncome" />
+
+    <br />
+
+    <p><b>Referencia Bancaria</b></p>
+
+    <label>Nombre de la Institución:</label>
+    <span>1- </span><input type="text" name="NameOfTheInstitution1" />
+    <span>2- </span><input type="text" name="NameOfTheInstitution2" />
+    <span>3- </span><input type="text" name="NameOfTheInstitution3" />
+
+    <label>País:</label>
+    <input type="text" name="countryBank1" />
+    <input type="text" name="countryBank2" />
+    <input type="text" name="countryBank3" />
+
+    <label>Persona Contacto:</label>
+    <input type="text" name="ContactPerson1" />
+    <input type="text" name="ContactPerson2" />
+    <input type="text" name="ContactPerson3" />
+
+    <label>Teléfono:</label>
+    <input type="tel" name="telephone1" />
+    <input type="tel" name="telephone2" />
+    <input type="tel" name="telephone3" />
+  </fieldset>
+  <fieldset>
+    <h1>Depósito Inicial</h1>
+    <label>Usted estará depositando o transfiriendo:</label>
+    <input type="checkbox" name="depositCash">
+    <span>Efectivo</span>
+    <input type="checkbox" name="depositSecurities">
+    <span>Títulos Valores</span>
+    <input type="checkbox" name="depositBoth">
+    <span>Ambos</span>
+
+    <label>Indique el Monto (USD):</label>
+    <span>Efectivo:</span>
+    <input type="text" name="depositedCash">
+    <span>Títulos Valores:</span>
+    <input type="text" name="depositedSecurities">
+    
+    
+  </fieldset>
+</form>
