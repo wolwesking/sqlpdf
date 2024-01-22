@@ -1,551 +1,1171 @@
-<form action="">
-  <fieldset name="GeneralInformation">
-    <legend class="h1 mb-4">
-      Datos Generales Completar todos los campos de este formulario, de no
-      aplicar colocar N/A
-    </legend>
+<div class="container mb-5">
+  <form action="">
+  <h1 class="h2 bg-primary p-2 text-center text-light m-0">Apertura de Cuenta Persona Juridica</h1>
+    <fieldset name="GeneralInformation">
+      <legend class="h5 mb-3 bg-primary-subtle text-center p-2">
+        Datos Generales Completar todos los campos de este formulario, de no
+        aplicar colocar N/A
+      </legend>
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <label for="NameOfCompany" class="form-label"
+            >Razón Social (Nombre de la persona jurídica):</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="NameOfCompany"
+            name="NameOfCompany"
+          />
+        </div>
 
-    <div class="mb-3">
-      <label for="NameOfCompany" class="form-label"
-        >Razón Social (Nombre de la persona jurídica):</label
-      >
-      <input
-        type="text"
-        class="form-control"
-        id="NameOfCompany"
-        name="NameOfCompany"
-      />
-    </div>
+        <div class="col-md-4">
+          <label for="Country" class="form-label"
+            >Lugar de Constitución (País):</label
+          >
+          <input type="text" class="form-control" id="Country" name="Country" />
+        </div>
 
-    <div class="mb-3">
-      <label for="Country" class="form-label"
-        >Lugar de Constitución (País):</label
-      >
-      <input type="text" class="form-control" id="Country" name="Country" />
-    </div>
+        <div class="col-md-4">
+          <label for="Website" class="form-label">Pagina Web:</label>
+          <input type="text" class="form-control" id="Website" name="Website" />
+        </div>
+      </div>
 
-    <div class="mb-3">
-      <label for="Website" class="form-label">Pagina Web:</label>
-      <input type="text" class="form-control" id="Website" name="Website" />
-    </div>
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <label for="PublicDeedNumber" class="form-label"
+            >No. de Escritura Pública:</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="PublicDeedNumber"
+            name="PublicDeedNumber"
+          />
+        </div>
 
-    <div class="row mb-3">
-      <div class="col-md-4">
-        <label for="PublicDeedNumber" class="form-label"
-          >No. de Escritura Pública:</label
+        <div class="col-md-4">
+          <label for="DateOfPublicDeed" class="form-label"
+            >Fecha de Escritura Pública:</label
+          >
+          <input
+            type="date"
+            class="form-control"
+            id="DateOfPublicDeed"
+            name="DateOfPublicDeed"
+          />
+        </div>
+
+        <div class="col-md-4">
+          <label for="DateOfIncorporation" class="form-label"
+            >Fecha de Constitución:</label
+          >
+          <input
+            type="date"
+            class="form-control"
+            id="DateOfIncorporation"
+            name="DateOfIncorporation"
+          />
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <label for="RollOrVolume" class="form-label">Rollo / Tomo:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="RollOrVolume"
+            name="RollOrVolume"
+          />
+        </div>
+
+        <div class="col-md-4">
+          <label for="Document" class="form-label">Documento:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="Document"
+            name="Document"
+          />
+        </div>
+
+        <div class="col-md-4">
+          <label for="File" class="form-label">Ficha / Folio:</label>
+          <input type="text" class="form-control" id="File" name="File" />
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="Adress" class="form-label"
+          >Domicilio (Detalle exacto de su ubicación fisica):</label
         >
-        <input
-          type="text"
-          class="form-control"
-          id="PublicDeedNumber"
-          name="PublicDeedNumber"
-        />
+        <input type="text" class="form-control" id="Adress" name="Adress" />
       </div>
 
-      <div class="col-md-4">
-        <label for="DateOfPublicDeed" class="form-label"
-          >Fecha de Escritura Pública:</label
+      <div class="mb-3">
+        <label class="form-label">Tipo de Entidad:</label>
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="Corporation"
+                name="Corporation"
+              />
+              <label class="form-check-label" for="Corporation"
+                >Corporación</label
+              >
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="Foundation"
+                name="Foundation"
+              />
+              <label class="form-check-label" for="Foundation">Fundación</label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="Escrow"
+                name="Escrow"
+              />
+              <label class="form-check-label" for="Escrow">Fideicomiso</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-md-3">
+          <label for="PostalAddress" class="form-label"
+            >Dirección postal:</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="PostalAddress"
+            name="PostalAddress"
+          />
+        </div>
+
+        <div class="col-md-3">
+          <label for="OfficeTelephone" class="form-label"
+            >Teléfono de Oficina:</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="OfficeTelephone"
+            name="OfficeTelephone"
+          />
+        </div>
+
+        <div class="col-md-3">
+          <label for="Fax" class="form-label">Fax:</label>
+          <input type="tel" class="form-control" id="Fax" name="Fax" />
+        </div>
+
+        <div class="col-md-3">
+          <label for="OtherAccess" class="form-label">Otro:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="OtherAccess"
+            name="OtherAccess"
+          />
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-check-label">Empresa con presencia Fiscal:</label>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="Company-with-Fiscal-presence-Yes"
+            name="Company-with-Fiscal-presence-Yes"
+          />
+          <label class="form-check-label" for="Company-with-Fiscal-presence-Yes"
+            >Si</label
+          >
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="Company-with-Fiscal-presence-No"
+            name="Company-with-Fiscal-presence-No"
+          />
+          <label class="form-check-label" for="Company-with-Fiscal-presence-No"
+            >No Operativa (en caso de no ser operativa la información la
+            sustentarán el o los beneficiarios finales).</label
+          >
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Tipo de cuenta:</label>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="Discrecional"
+            name="Discrecional"
+          />
+          <label class="form-check-label" for="Discrecional"
+            >Discrecional</label
+          >
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="NoDiscrecional"
+            name="NoDiscrecional"
+          />
+          <label class="form-check-label" for="NoDiscrecional"
+            >No Discrecional</label
+          >
+        </div>
+      </div>
+    </fieldset>
+    <!--Style added-->
+
+    <fieldset name="EconomicBeneficiaryofPersonalorNaturalAccount">
+      <legend class="h5 mb-3 bg-primary-subtle text-center p-2">
+        Beneficiario(s) económico(s) de Cuenta Persona(s) o Natural(es)
+      </legend>
+
+      <div class="row mb-3">
+        <div class="col-md-3">
+          <label for="Name1" class="form-label">Nombre(s):</label>
+          <br />
+          <input type="text" class="form-control" id="Name1" name="Name1" />
+          <br />
+          <input type="text" class="form-control" id="Name2" name="Name2" />
+          <br />
+          <input type="text" class="form-control" id="Name3" name="Name3" />
+        </div>
+
+        <div class="col-md-3">
+          <label for="Surname1" class="form-label">Apellido(s):</label>
+          <br />
+          <input
+            type="text"
+            class="form-control"
+            id="Surname1"
+            name="Surname1"
+          />
+          <br />
+          <input
+            type="text"
+            class="form-control"
+            id="Surname2"
+            name="Surname2"
+          />
+          <br />
+          <input
+            type="text"
+            class="form-control"
+            id="Surname3"
+            name="Surname3"
+          />
+        </div>
+
+        <div class="col-md-3">
+          <label for="DocumentNo1" class="form-label"
+            >No. de Documento (ID):</label
+          >
+          <br />
+          <input
+            type="text"
+            class="form-control"
+            id="DocumentNo1"
+            name="DocumentNo1"
+          />
+          <br />
+          <input
+            type="text"
+            class="form-control"
+            id="DocumentNo2"
+            name="DocumentNo2"
+          />
+          <br />
+          <input
+            type="text"
+            class="form-control"
+            id="DocumentNo3"
+            name="DocumentNo3"
+          />
+        </div>
+
+        <div class="col-md-3">
+          <label for="Residenci1" class="form-label"
+            >País de Residencia Fiscal:</label
+          >
+          <br />
+          <input
+            type="text"
+            class="form-control"
+            id="Residenci1"
+            name="CountryOfTax1"
+          />
+          <br />
+          <input
+            type="text"
+            class="form-control"
+            id="Residencia2"
+            name="CountryOfTax2"
+          />
+          <br />
+          <input
+            type="text"
+            class="form-control"
+            id="Residencia3"
+            name="CountryOfTax3"
+          />
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset name="SourceofFunds">
+      <legend class="h5 mb-3 bg-primary-subtle text-center p-2">
+        Origen de Fondos
+      </legend>
+
+      <!-- First Set of Fields -->
+      <div class="mb-3">
+        <label class="form-label"
+          >Jurisdicciones principales de donde recibe/envía:</label
         >
-        <input
-          type="date"
-          class="form-control"
-          id="DateOfPublicDeed"
-          name="DateOfPublicDeed"
-        />
+
+        <div class="row mb-3 align-items-center">
+          <div class="col-md-1">
+            <p class="d-inline">1.</p>
+          </div>
+          <div class="col-md-2">
+            <input
+              type="text"
+              class="form-control d-inline-block"
+              id="income1"
+              name="income1"
+            />
+          </div>
+          <div class="col-md-2">
+            <div class="form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                name="ReceiveYourCash1"
+              />
+              <label class="form-check-label">Recibe su Efectivo</label>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                name="SendYourCash1"
+              />
+              <label class="form-check-label">Envía su Efectivo</label>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                name="ReceiveYourTitles1"
+              />
+              <label class="form-check-label">Recibe sus Títulos</label>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                name="SubmitYourTitles1"
+              />
+              <label class="form-check-label">Envía sus Títulos</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Set of Fields -->
+        <div class="row mb-3 align-items-center">
+          <div class="col-md-1">
+            <p class="d-inline">2.</p>
+          </div>
+          <div class="col-md-2">
+            <input
+              type="text"
+              class="form-control"
+              id="income2"
+              name="income2"
+            />
+          </div>
+          <div class="col-md-2">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="ReceiveYourCash2"
+            />
+            <span class="form-check-label">Recibe su Efectivo</span>
+          </div>
+          <div class="col-md-2">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="SendYourCash2"
+            />
+            <span class="form-check-label">Envía su Efectivo</span>
+          </div>
+          <div class="col-md-2">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="ReceiveYourTitles2"
+            />
+            <span class="form-check-label">Recibe sus Títulos</span>
+          </div>
+          <div class="col-md-2">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="SubmitYourTitles2"
+            />
+            <span class="form-check-label">Envía sus Títulos</span>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset name="SourceOfResourcesOrHeritage">
+      <legend class="h5 mb-3 bg-primary-subtle text-center p-2">
+        Fuente de los Recursos o Patrimonio
+      </legend>
+
+      <div class="mb-3">
+        <label class="form-label">Nombre del Empleador / Independiente:</label>
+        <input type="text" class="form-control" name="NameOfEmployer" />
       </div>
 
-      <div class="col-md-4">
-        <label for="DateOfIncorporation" class="form-label"
-          >Fecha de Constitución:</label
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">Ingreso Anual: (USD):</label>
+          <input type="number" class="form-control" name="IncomeUsd" />
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Salario Anual: (USD):</label>
+          <input type="number" class="form-control" name="SalaryUsd" />
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">Años en la Empresa:</label>
+          <input type="number" class="form-control" name="YearsInTheCompany" />
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Actividad:</label>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="Professional"
+            />
+            <label class="form-check-label">Honorarios Profesionales</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="OwnBusiness"
+            />
+            <label class="form-check-label">Negocio Propio</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" name="Saving" />
+            <label class="form-check-label">Ahorro</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" name="Pension" />
+            <label class="form-check-label">Pensión</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" name="Salary" />
+            <label class="form-check-label">Salario</label>
+          </div>
+        </div>
+        <div class="col-md">
+          <label class="form-label">Dividendos de Inversión:</label>
+          <input type="text" class="form-control" name="InvestmentDividents" />
+        </div>
+        <div class="col-md">
+          <label class="form-label">Otros:</label>
+          <input type="text" class="form-control" name="OtherIncome" />
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-4"></div>
+      </div>
+
+      <p><b>Referencia Bancaria</b></p>
+
+      <div class="row mb-2">
+        <div class="col-md-3">
+          <label class="form-label">Nombre de la Institución:</label>
+          <br />
+          <input
+            type="text"
+            class="form-control"
+            name="NameOfTheInstitution1"
+          />
+          <br />
+          <input
+            type="text"
+            class="form-control"
+            name="NameOfTheInstitution2"
+          />
+          <br />
+          <input
+            type="text"
+            class="form-control"
+            name="NameOfTheInstitution3"
+          />
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">País:</label>
+          <br />
+          <input type="text" class="form-control" name="countryBank1" />
+          <br />
+          <input type="text" class="form-control" name="countryBank2" />
+          <br />
+          <input type="text" class="form-control" name="countryBank3" />
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Persona Contacto:</label>
+          <br />
+          <input type="text" class="form-control" name="ContactPerson1" />
+          <br />
+          <input type="text" class="form-control" name="ContactPerson2" />
+          <br />
+          <input type="text" class="form-control" name="ContactPerson3" />
+        </div>
+
+        <div class="col-md-3">
+          <label class="form-label">Teléfono:</label>
+          <br />
+          <input type="tel" class="form-control" name="telephone1" />
+          <br />
+          <input type="tel" class="form-control" name="telephone2" />
+          <br />
+          <input type="tel" class="form-control" name="telephone3" />
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend class="h5 mb-3 bg-primary-subtle text-center p-2">
+        Depósito Inicial
+      </legend>
+
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <label class="form-label"
+            >Usted estará depositando o transfiriendo:</label
+          >
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="depositCash"
+            />
+            <label class="form-check-label">Efectivo</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="depositSecurities"
+            />
+            <label class="form-check-label">Títulos Valores</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="depositBoth"
+            />
+            <label class="form-check-label">Ambos</label>
+          </div>
+        </div>
+        <div class="col-md">
+          <label class="form-label">Indique el Monto (USD):</label>
+          <div class="mb-3">
+            <label class="form-label">Efectivo:</label>
+            <input type="text" class="form-control" name="depositedCash" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Títulos Valores:</label>
+            <input
+              type="text"
+              class="form-control"
+              name="depositedSecurities"
+            />
+          </div>
+        </div>
+
+        <div class="row mb-3"></div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label"
+            >Institución de donde Provienen los Fondos:</label
+          >
+        </div>
+        <div class="col-md-4">
+          <label class="form-label"
+            >Tiempo de Relación con la Institución:</label
+          >
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-1">1.</div>
+        <div class="col-md-3">
+          <input
+            type="text"
+            class="form-control"
+            name="InstitutionFromWhichTheFundsCome1"
+          />
+        </div>
+        <div class="col-md-2 align-self-center justify-content-center">
+          <input type="checkbox" class="form-check-input" name="cash1" />
+          <label class="form-check-label">Efectivo</label>
+          <input type="checkbox" class="form-check-input" name="cash2" />
+          <label class="form-check-label">Títulos</label>
+        </div>
+        <div class="col-md">
+          <input
+            type="text"
+            class="form-control"
+            name="RelationshipTimeWithTheInstitution1"
+          />
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-1">2.</div>
+        <div class="col-md-3">
+          <input
+            type="text"
+            class="form-control"
+            name="InstitutionFromWhichTheFundsCome2"
+          />
+        </div>
+        <div class="col-md-2 align-self-center justify-content-center">
+          <input type="checkbox" class="form-check-input" name="cash3" />
+          <label class="form-check-label">Efectivo</label>
+          <input type="checkbox" class="form-check-input" name="cash4" />
+          <label class="form-check-label">Títulos</label>
+        </div>
+        <div class="col-md">
+          <input
+            type="text"
+            class="form-control"
+            name="RelationshipTimeWithTheInstitution2"
+          />
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend class="h5 mb-3 bg-primary-subtle text-center p-2">
+        Persona Políticamente Expuesta
+      </legend>
+
+      <p>
+        El cliente debe indicar expresamente si es Persona Políticamente
+        Expuesta (PEP). PEP, es una persona que desempeña o ha desempeñado
+        funciones públicas prominentes dentro o fuera del país, tales como jefes
+        de Estado o de Gobierno, políticos de alto nivel, funcionarios
+        gubernamentales, judiciales u oficiales militares de alto nivel,
+        ejecutivos de alto nivel de corporaciones que pertenecen al Estado y
+        funcionarios importantes de partidos políticos. (Con base en la
+        definición establecida en el Artículo 4 Ley 23/2015)
+      </p>
+
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label"
+            >¿Es Ud. Una Persona Políticamente Expuesta (PEP)?</label
+          >
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="PoliticallyExposedCheckYes"
+            />
+            <label class="form-check-label">Sí</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="PoliticallyExposedCheckNo"
+            />
+            <label class="form-check-label">No</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label"
+            >¿Es Ud. Familiar Cercano (cónyuge o 1er grado consanguinidad) de
+            PEP?</label
+          >
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="CloseRelativeCheckYes"
+            />
+            <label class="form-check-label">Sí</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="CloseRelativeCheckNo"
+            />
+            <label class="form-check-label">No</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label"
+            >¿Declara que en los últimos 5 años (según la definición) se
+            considera como PEP?</label
+          >
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="ConsideredPEPCheckYes"
+            />
+            <label class="form-check-label">Sí</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="ConsideredPEPCheckNo"
+            />
+            <label class="form-check-label">No</label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend class="h5 mb-3 bg-primary-subtle text-center p-2">
+        Comunicación Seleccionar uno o varios campos
+      </legend>
+
+      <div class="mb-3">
+        <label class="form-label"
+          >Personas autorizadas para instruir órdenes</label
         >
-        <input
-          type="date"
-          class="form-control"
-          id="DateOfIncorporation"
-          name="DateOfIncorporation"
-        />
-      </div>
-    </div>
-
-    <div class="row mb-3">
-      <div class="col-md-4">
-        <label for="RollOrVolume" class="form-label">Rollo / Tomo:</label>
-        <input
-          type="text"
-          class="form-control"
-          id="RollOrVolume"
-          name="RollOrVolume"
-        />
-      </div>
-
-      <div class="col-md-4">
-        <label for="Document" class="form-label">Documento:</label>
-        <input type="text" class="form-control" id="Document" name="Document" />
-      </div>
-
-      <div class="col-md-4">
-        <label for="File" class="form-label">Ficha / Folio:</label>
-        <input type="text" class="form-control" id="File" name="File" />
-      </div>
-    </div>
-
-    <div class="mb-3">
-      <label for="Adress" class="form-label"
-        >Domicilio (Detalle exacto de su ubicación fisica):</label
-      >
-      <input type="text" class="form-control" id="Adress" name="Adress" />
-    </div>
-
-    <div class="mb-3">
-      <label class="form-label">Tipo de Entidad:</label>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          id="Corporation"
-          name="Corporation"
-        />
-        <label class="form-check-label" for="Corporation">Corporación</label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          id="Foundation"
-          name="Foundation"
-        />
-        <label class="form-check-label" for="Foundation">Fundación</label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          id="Escrow"
-          name="Escrow"
-        />
-        <label class="form-check-label" for="Escrow">Fideicomiso</label>
-      </div>
-    </div>
-
-    <div class="row mb-3">
-      <div class="col-md-4">
-        <label for="PostalAddress" class="form-label">Dirección postal:</label>
-        <input
-          type="text"
-          class="form-control"
-          id="PostalAddress"
-          name="PostalAddress"
-        />
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" name="Titular" />
+          <label class="form-check-label">Titular</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" name="co-title" />
+          <label class="form-check-label">Cotitular</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" name="Signatory" />
+          <label class="form-check-label">Firmante (s)</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" name="Attorney" />
+          <label class="form-check-label">Apoderado</label>
+        </div>
+        <div class="form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="RecipientShareholder"
+          />
+          <label class="form-check-label">Beneficiario Accionista</label>
+        </div>
       </div>
 
-      <div class="col-md-4">
-        <label for="OfficeTelephone" class="form-label"
-          >Teléfono de Oficina:</label
+      <div class="mb-3">
+        <label class="form-label">Las órdenes podrán ser colocadas por</label>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" name="Mail" />
+          <label class="form-check-label">Correo</label>
+        </div>
+        <div class="form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="DocumentsWritings"
+          />
+          <label class="form-check-label">Documentos Escritos</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" name="ViaTelephone" />
+          <label class="form-check-label">Vía Telefónica</label>
+        </div>
+        <div class="form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="TextPlatforms"
+          />
+          <label class="form-check-label">Plataformas de Texto</label>
+        </div>
+        <div class="form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="DirectlyByTheClientInTheSystem"
+          />
+          <label class="form-check-label"
+            >Directamente por el Cliente en el Sistema</label
+          >
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" name="AppPrevious" />
+          <label class="form-check-label">Todas las Anteriores</label>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label"
+          >Confirmar las instrucciones emitidas (compra y venta de títulos y
+          valores)</label
         >
-        <input
-          type="text"
-          class="form-control"
-          id="OfficeTelephone"
-          name="OfficeTelephone"
-        />
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" name="SendYes" />
+          <label class="form-check-label">Si</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" name="SendNo" />
+          <label class="form-check-label">No</label>
+        </div>
       </div>
 
-      <div class="col-md-4">
-        <label for="Fax" class="form-label">Fax:</label>
-        <input type="tel" class="form-control" id="Fax" name="Fax" />
+      <div class="mb-3">
+        <label class="form-label">De ser afirmativa completar:</label>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" name="Mail2" />
+          <label class="form-check-label">Correo</label>
+        </div>
+        <div class="form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="DocumentsWritings2"
+          />
+          <label class="form-check-label">Documentos Escritos</label>
+        </div>
+        <div class="form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="ViaTelephone2"
+          />
+          <label class="form-check-label">Vía Telefónica</label>
+        </div>
+        <div class="form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="TextPlatforms2"
+          />
+          <label class="form-check-label">Plataformas de Texto</label>
+        </div>
       </div>
-    </div>
 
-    <div class="mb-3">
-      <label for="OtherAccess" class="form-label">Otro:</label>
-      <input
-        type="text"
-        class="form-control"
-        id="OtherAccess"
-        name="OtherAccess"
-      />
-    </div>
-
-    <div class="mb-3">
-      <label class="form-check-label">Empresa con presencia Fiscal:</label>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          id="Company-with-Fiscal-presence-Yes"
-          name="Company-with-Fiscal-presence-Yes"
-        />
-        <label class="form-check-label" for="Company-with-Fiscal-presence-Yes"
-          >Si</label
+      <div class="mb-3">
+        <label class="form-label"
+          >Es voluntad del cliente que los Estados de Cuenta de su cuenta de
+          inversión reposen en las oficinas de Firmus Financial Inc. a su
+          disposicion y solicitud</label
         >
+        <div class="form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="AccountStatementYes"
+          />
+          <label class="form-check-label">Si</label>
+        </div>
+        <div class="form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="AccountStatementNo"
+          />
+          <label class="form-check-label">No</label>
+        </div>
       </div>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          id="Company-with-Fiscal-presence-No"
-          name="Company-with-Fiscal-presence-No"
-        />
-        <label class="form-check-label" for="Company-with-Fiscal-presence-No"
-          >No Operativa (en caso de no ser operativa la información la
-          sustentarán el o los beneficiarios finales).</label
+
+      <div class="mb-3">
+        <label class="form-label"
+          >Si su respuesta es No indique como desea recibir los Estados de
+          Cuenta:</label
         >
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" name="Correcto" />
+          <label class="form-check-label">Correcto</label>
+        </div>
+        <div class="form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="ApartadoPostal"
+          />
+          <label class="form-check-label">Apartado Postal</label>
+        </div>
       </div>
-    </div>
 
-    <div class="mb-3">
-      <label class="form-label">Tipo de cuenta:</label>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          id="Discrecional"
-          name="Discrecional"
-        />
-        <label class="form-check-label" for="Discrecional">Discrecional</label>
+      <div class="mb-3">
+        <label class="form-label">Desea recibirlos con periodicidad</label>
+        <div class="form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="MonthlyRecieve"
+          />
+          <label class="form-check-label">Mensual</label>
+        </div>
+        <div class="form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="QuarterlyRecieve"
+          />
+          <label class="form-check-label">Trimestral</label>
+        </div>
+        <div class="form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="SemiannualRecieve"
+          />
+          <label class="form-check-label">Semestral</label>
+        </div>
+        <div class="form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="YearlyRecieve"
+          />
+          <label class="form-check-label">Anual</label>
+        </div>
       </div>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          id="NoDiscrecional"
-          name="NoDiscrecional"
-        />
-        <label class="form-check-label" for="NoDiscrecional"
-          >No Discrecional</label
+
+      <div class="mb-3">
+        <label class="form-label"
+          >Firmus Financial Inc. tomará como correo autorizado el declarado en
+          Datos Generales, de ser diferente suministrar el mismo:</label
         >
+        <input type="text" class="form-control" name="otherEmailDecleration" />
       </div>
-    </div>
-  </fieldset>
+    </fieldset>
 
-  <fieldset name="EconomicBeneficiaryofPersonalorNaturalAccount">
-    <h1>Beneficiario(s) económico(s) de Cuenta Persona(s) o Natural(es)</h1>
-    <label>Nombre(s):</label>
-    <input type="text" name="Name1" />
-    <input type="text" name="Name2" />
-    <input type="text" name="Name3" />
+    <fieldset>
+      <legend class="h5 mb-3 bg-primary-subtle text-center p-2">
+        Declaración
+      </legend>
 
-    <label>Apellido(s):</label>
-    <input type="text" name="Surname1" />
-    <input type="text" name="Surname2" />
-    <input type="text" name="Surname3" />
+      <div class="mb-3">
+        <p>
+          Confirmo (Confirmamos) que he (hemos) comprendido los términos del
+          acuerdo de cuenta de inversión, incluyendo los modos de comunicación,
+          acceso en línea, notificaciones y demás términos. Actuando en mi
+          propio nombre y de manera voluntaria, declaro (declaramos) que hemos
+          comprendido a cabalidad la información que se ha solicitado y
+          respondiendo los campos de forma veraz y correcta en todo su alcance
+          de forma plena e irrevocable; autorizando a Firmus Financial Inc. para
+          la verificación de los datos suministrados en esta plantilla,
+          advirtiendo de forma inmediata cualquier suceso que implique
+          modificación de la información aquí declarada, de las circunstancias:
+          Económicas, financieras y/o personales, del titular de la cuenta,
+          firmantes autorizados, propietario efectivo o beneficiarios finales.
+          Confirmo (Confirmamos) estar anuente que las condiciones generales
+          entregadas forman parte de la relación contractual presente.
+        </p>
+      </div>
+    </fieldset>
 
-    <label>No. de Documento (ID):</label>
-    <input type="text" name="DocumentNo1" />
-    <input type="text" name="DocumentNo2" />
-    <input type="text" name="DocumentNo3" />
-  </fieldset>
-  <fieldset name="SourceofFunds">
-    <h1>Origen de Fondos</h1>
-    <p>Jurisdicciones principales de donde recibe/envía:</p>
-    <label>1-</label>
-    <input type="text" name="income1" />
-    <input type="checkbox" name="ReceiveYourCash1" />
-    <span>Recibe su Efectivo</span>
-    <input type="checkbox" name="SendYourCash1" />
-    <span>Envía su Efectivo</span>
-    <input type="checkbox" name="ReceiveYourTitles1" />
-    <span>Recibe sus Títulos</span>
-    <input type="checkbox" name="SubmitYourTitles1" />
-    <span>Envía sus Títulos</span>
+    <fieldset>
+      <legend class="h5 mb-3 bg-primary-subtle text-center p-2">
+        Firma (s) Cliente (s)
+      </legend>
 
-    <br />
+      <!-- First Set of Fields and Signature -->
+      <div class="row mb-3">
+        <div class="col-md-2">
+          <label>Tipo de Firma:</label>
+        </div>
+        <div class="col-md-1">
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="SignitureTypeJoint"
+            />
+            <label class="form-check-label">Conjunta</label>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="SignitureTypeIndistinct"
+            />
+            <label class="form-check-label">Indistinta</label>
+          </div>
+        </div>
+      </div>
 
-    <label>2-</label>
-    <input type="text" name="income2" />
-    <input type="checkbox" name="ReceiveYourCash2" />
-    <span>Recibe su Efectivo</span>
-    <input type="checkbox" name="SendYourCash2" />
-    <span>Envía su Efectivo</span>
-    <input type="checkbox" name="ReceiveYourTitles2" />
-    <span>Recibe sus Títulos</span>
-    <input type="checkbox" name="SubmitYourTitles2" />
-    <span>Envía sus Títulos</span>
-  </fieldset>
-  <fieldset name="SourceOfResourcesOrHeritage">
-    <h1>Fuente de los Recursos o Patrimonio</h1>
-    <label>Nombre del Empleador / Independiente:</label>
-    <input type="text" name="NameOfEmployer" />
-    <label>Ingreso Anual: (USD):</label>
-    <input type="number" name="IncomeUsd" />
-    <br />
-    <label>Salario Anual: (USD):</label>
-    <input type="number" name="SalaryUsd" />
+      <div class="row mb-3">
+        <div class="col-md">
+          <label>FNombre completo (en imprenta):</label>
+          <input type="text" class="form-control" name="FullNameInPrint1" />
+        </div>
+        <div class="col-md">
+          <label>FNombre completo (en imprenta):</label>
+          <input type="text" class="form-control" name="FullNameInPrint2" />
+        </div>
+      </div>
 
-    <label>Años en la Empresa:</label>
-    <input type="number" name="YearsInTheCompany" />
+      <div class="row mb-3">
+        <div class="col-md">
+          <label>No. de Documento (ID):</label>
+          <input type="text" class="form-control" name="DomumentID1" />
+        </div>
+        <div class="col-md">
+          <label>No. de Documento (ID):</label>
+          <input type="text" class="form-control" name="DomumentID2" />
+        </div>
+      </div>
 
-    <label>Actividad:</label>
-    <input type="checkbox" name="Professional" />
-    <span>Honorarios Profesionales</span>
+      <div class="row mb-3">
+        <div class="col-md">
+          <label>Date:</label>
+          <input type="date" class="form-control" name="DateOfSign1" />
+        </div>
+        <div class="col-md">
+          <label>Date:</label>
+          <input type="date" class="form-control" name="DateOfSign2" />
+        </div>
+      </div>
 
-    <input type="checkbox" name="OwnBusiness" />
-    <span>Negocio Propio</span>
+      <!-- <div class="row mb-3">
+        <div class="col-md">
+          <canvas height="50" width="50" class="border"></canvas>
+          <label>Firma</label>
+        </div>
+        <div class="col-md">
+          <canvas height="50" width="50" class="border"></canvas>
+          <label>Firma</label>
+        </div>
+      </div> -->
+    </fieldset>
 
-    <br />
+    <fieldset>
+      <legend class="h5 mb-3 bg-primary-subtle text-center p-2">
+        Firma (s) Personal de la Casa de Valores
+      </legend>
 
-    <input type="checkbox" name="Saving" />
-    <span>Ahorro</span>
+      <div class="row mb-3">
+        <div class="col-md">
+          <label>Nombre del Corredor:</label>
+          <input type="text" class="form-control" name="RunnerName1" />
+        </div>
+        <div class="col-md">
+          <label>Nombre del Oficial de Cumplimiento:</label>
+          <input type="text" class="form-control" name="RunnerName2" />
+        </div>
+        <div class="col-md">
+          <label>Nombre del Ejecutivo Principal:</label>
+          <input type="text" class="form-control" name="RunnerName3" />
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-mb">
+          <label>Fecha</label>
+          <input type="date" class="form-control" name="DateRunner" />
+        </div>
+        <div class="col-mb">
+          <label>Fecha</label>
+          <input type="date" class="form-control" name="DateRunner" />
+        </div>
+        <div class="col-mb">
+          <label>Fecha</label>
+          <input type="date" class="form-control" name="DateRunner" />
+        </div>
+      </div>
+      <!-- <div class="row mb-3">
+        <div class="col-md">
+          <canvas height="50" width="50" class="border"></canvas>
+        </div>
+  
+        <div class="col-md">
+          <canvas height="50" width="50" class="border"></canvas>
+        </div>
+  
+        <div class="col-md">
+          <canvas height="50" width="50" class="border"></canvas>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md">
+          <label>Firma del Corredor de Valores</label>
+        </div>
+  
+        <div class="col-md">
+          <label>Firma del Oficial de Cumplimiento</label>
+        </div>
+  
+        <div class="col-md">
+          <label>Firma del Ejecutivo Principal</label>
+        </div>
+      </div> -->
 
-    <input type="checkbox" name="Pension" />
-    <span>Pensión</span>
+    </fieldset>
 
-    <input type="checkbox" name="Salary" />
-    <span>Salario</span>
+    <fieldset>
+      <hr>
+      <div>
+        <button type="submit" class="btn-lg btn btn-primary">Submit</button>
+      </div>
 
-    <label>Dividendos de Inversión:</label>
-    <input type="text" name="InvestmentDividents" />
-
-    <label>Otros:</label>
-    <input type="text" name="OtherIncome" />
-
-    <br />
-
-    <p><b>Referencia Bancaria</b></p>
-
-    <label>Nombre de la Institución:</label>
-    <span>1- </span><input type="text" name="NameOfTheInstitution1" />
-    <span>2- </span><input type="text" name="NameOfTheInstitution2" />
-    <span>3- </span><input type="text" name="NameOfTheInstitution3" />
-
-    <label>País:</label>
-    <input type="text" name="countryBank1" />
-    <input type="text" name="countryBank2" />
-    <input type="text" name="countryBank3" />
-
-    <label>Persona Contacto:</label>
-    <input type="text" name="ContactPerson1" />
-    <input type="text" name="ContactPerson2" />
-    <input type="text" name="ContactPerson3" />
-
-    <label>Teléfono:</label>
-    <input type="tel" name="telephone1" />
-    <input type="tel" name="telephone2" />
-    <input type="tel" name="telephone3" />
-  </fieldset>
-  <fieldset>
-    <h1>Depósito Inicial</h1>
-    <label>Usted estará depositando o transfiriendo:</label>
-    <input type="checkbox" name="depositCash" />
-    <span>Efectivo</span>
-    <input type="checkbox" name="depositSecurities" />
-    <span>Títulos Valores</span>
-    <input type="checkbox" name="depositBoth" />
-    <span>Ambos</span>
-
-    <label>Indique el Monto (USD):</label>
-    <span>Efectivo:</span>
-    <input type="text" name="depositedCash" />
-    <span>Títulos Valores:</span>
-    <input type="text" name="depositedSecurities" />
-
-    <br />
-
-    <label>Institución de donde Provienen los Fondos:</label>
-    <span>1- </span>
-    <input type="text" name="InstitutionFromWhichTheFundsCome1" />
-    <span>2- </span>
-    <input type="text" name="InstitutionFromWhichTheFundsCome2" />
-
-    <input type="checkbox" name="cash1" />
-    <span>Efectivo</span>
-    <input type="checkbox" name="cash2" />
-    <span>Títulos</span>
-
-    <label>Tiempo de Relación con la Institución:</label>
-    <input type="text" name="RelationshipTimeWithTheInstitution1" />
-    <input type="text" name="RelationshipTimeWithTheInstitution2" />
-  </fieldset>
-  <fieldset>
-    <h1>Persona Políticamente Expuesta</h1>
-    <p>
-      El cliente debe indicar expresamente si es Persona Políticamente Expuesta
-      (PEP). PEP, es una persona que desempeña o ha desempeñado funciones
-      públicas prominentes dentro o fuera del país, tales como jefes de Estado o
-      de Gobierno, políticos de alto nivel, funcionarios gubernamentales,
-      judiciales u oficiales militares de alto nivel, ejecutivos de alto nivel
-      de corporaciones que pertenecen al Estado y funcionarios importantes de
-      partidos políticos. (Con base en la definición establecida en el Artículo
-      4 Ley 23/2015)
-    </p>
-
-    <label>Si</label>
-    <label>No</label>
-    <br />
-    <span>¿Es Ud. Una Persona Políticamente Expuesta (PEP)?</span>
-    <input type="checkbox" name="PoliticallyExposedCheckYes" />
-    <input type="checkbox" name="PoliticallyExposedCheckNo" />
-    <br />
-    <span
-      >¿Es Ud. Familiar Cercano (cónyuge o 1er grado consanguinidad) de
-      PEP?</span
-    >
-    <input type="checkbox" name="CloseRelativeCheckYes" />
-    <input type="checkbox" name="CloseRelativeCheckNo" />
-    <br />
-    <span
-      >¿Declara que en los últimos 5 años (según la definición) se considera
-      como PEP?</span
-    >
-    <input type="checkbox" name="ConsideredPEPCheckYes" />
-    <input type="checkbox" name="ConsideredPEPCheckNo" />
-  </fieldset>
-  <fieldset>
-    <h1>Comunicación Seleccionar uno o varios campos</h1>
-    <label>Titular</label>
-    <label>Cotitular</label>
-    <label>Firmante (s)</label>
-    <label>Apoderado</label>
-    <label>Beneficiario Accionista</label>
-    <br />
-    <span>Personas autorizadas para instruir órdenes</span>
-    <input type="checkbox" name="Titular" />
-    <input type="checkbox" name="co-title" />
-    <input type="checkbox" name="Signatory" />
-    <input type="checkbox" name="Attorney" />
-    <input type="checkbox" name="RecipientShareholder" />
-    <br />
-    <label>Correo</label>
-    <label>Documentos Escritos</label>
-    <label>Vía Telefónica</label>
-    <label>Plataformas de Texto</label>
-    <label>Directamente por el Cliente en el Sistema</label>
-    <label>Todas las Anteriores</label>
-    <br />
-    <span>Las órdenes podrán ser colocadas por</span>
-    <input type="checkbox" name="Mail" />
-    <input type="checkbox" name="DocumentsWritings" />
-    <input type="checkbox" name="ViaTelephone" />
-    <input type="checkbox" name="TextPlatforms" />
-    <input type="checkbox" name="DirectlyByTheClientInTheSystem" />
-    <input type="checkbox" name="AppPrevious" />
-    <br />
-    <label
-      >Confirmar las instrucciones emitidas (compra y venta de títulos y
-      valores)</label
-    >
-    <input type="checkbox" name="SendYes" /><span>Si</span>
-    <input type="checkbox" name="SendNo" /><span>No</span>
-
-    <label>De ser afirmativa completar:</label>
-    <label>Correo</label>
-    <label>Documentos Escritos</label>
-    <label>Vía Telefónica</label>
-    <label>Plataformas de Texto</label>
-    <input type="checkbox" name="Mail2" />
-    <input type="checkbox" name="DocumentsWritings2" />
-    <input type="checkbox" name="ViaTelephone2" />
-    <input type="checkbox" name="TextPlatforms2" />
-    <br />
-    <label
-      >Es voluntad del cliente que los Estados de Cuenta de su cuenta de
-      inversión reposen en las oficinas de Firmus Financial Inc. a su
-      disposicion y solicitud</label
-    >
-    <label>Si</label>
-    <label>No</label>
-    <br />
-    <input type="checkbox" name="AccountStatementYes" />
-    <input type="checkbox" name="AccountStatementNo" />
-    <br />
-    <label
-      >Si su respuesta es No indique como desea recibir los Estados de
-      Cuenta:</label
-    >
-    <input type="checkbox" name="AccountStatementYes" />
-    <span>Correcto</span>
-    <input type="checkbox" name="AccountStatementNo" />
-    <span>Apartado Postal</span>
-    <br />
-    <span>Desea recibirlos con periodicidad</span>
-
-    <input type="checkbox" name="MonthlyRecieve" />
-    <span>Mensual</span>
-
-    <input type="checkbox" name="QuarterlyRecieve" />
-    <span>Trimestral</span>
-
-    <input type="checkbox" name="SemiannualRecieve" />
-    <span>Semestral</span>
-
-    <input type="checkbox" name="YearlyRecieve" />
-    <span>Anual</span>
-
-    <label
-      >Firmus Financial Inc. tomará como correo autorizado el declarado en Datos
-      Generales, de ser diferente suministrar el mismo:</label
-    >
-    <input type="text" name="otherEmailDecleration" />
-  </fieldset>
-  <fieldset>
-    <h1>Declaración</h1>
-    <p>
-      Confirmo (Confirmamos) que he (hemos) comprendido los términos del acuerdo
-      de cuenta de inversión, incluyendo los modos de comunicación, acceso en
-      línea, notificaciones y demás términos. Actuando en mi propio nombre y de
-      manera voluntaria, declaro (declaramos) que hemos comprendido a cabalidad
-      la información que se ha solicitado y respondiendo los campos de forma
-      veraz y correcta en todo su alcance de forma plena e irrevocable;
-      autorizando a Firmus Financial Inc. para la verificación de los datos
-      suministrados en esta plantilla, advirtiendo de forma inmediata cualquier
-      suceso que implique modificación de la información aquí declarada, de las
-      circunstancias: Económicas, financieras y/o personales, del titular de la
-      cuenta, firmantes autorizados, propietario efectivo o beneficiarios
-      finales. Confirmo (Confirmamos) estar anuente que las condiciones
-      generales entregadas forman parte de la relación contractual presente.
-    </p>
-  </fieldset>
-  <fieldset>
-    <h1>Firma (s) Cliente (s)</h1>
-    <label>Tipo de Firma:</label>
-    <input type="checkbox" name="SignitureTypeJoint" />
-    <input type="checkbox" name="SignitureTypeIndistinct" />
-    <br />
-    <label>FNombre completo (en imprenta):</label>
-    <input type="text" name="FullNameInPrint" />
-    <label>No. de Documento (ID):</label>
-    <input type="text" name="DomumentID" />
-    <label>Date</label>
-    <input type="date" name="DateOfSign" />
-    <br />
-    <canvas height="50" width="50" style="border: 1px solid #000" ></canvas>
-    <br />
-    <label>Firma</label>
-    <br />
-    <label>FNombre completo (en imprenta):</label>
-    <input type="text" name="FullNameInPrint" />
-    <label>No. de Documento (ID):</label>
-    <input type="text" name="DomumentID" />
-    <label>Date</label>
-    <input type="date" name="DateOfSign" />
-    <br />
-    <canvas height="50" width="50" style="border: 1px solid #000"></canvas>
-    <br />
-    <label>Firma</label>
-  </fieldset>
-  <fieldset>
-    <h1>Firma (s) Personal de la Casa de Valores</h1>
-    <label>Nombre del Corredor:</label>
-    <label>Nombre del Oficial de Cumplimiento:</label>
-    <label>Nombre del Ejecutivo Principal:</label>
-    <br />
-    <input type="text" name="RunnerName" />
-    <input type="text" name="ComplianceOfficerName" />
-    <input type="text" name="ChiefExecutiveName" />
-    <br />
-    <span>date</span>
-    <input type="date" name="DateRunner" />
-    <span>date</span>
-    <input type="date" name="DateComplianceOfficer" />
-    <span>date</span>
-    <input type="date" name="DateChiefExecutive" />
-    <br>
-    <canvas height="50" width="50" style="border: 1px solid #000"></canvas>
-    <canvas height="50" width="50" style="border: 1px solid #000"></canvas>
-    <canvas height="50" width="50" style="border: 1px solid #000"></canvas>
-    <br>
-    <label>Firma del Corredor de Valores</label>
-    <label>Firma del Oficial de Cumplimiento</label>
-    <label>Firma del Ejecutivo Principal</label>
-  </fieldset>
-</form>
+    </fieldset>
+  </form>
+</div>
