@@ -1165,8 +1165,39 @@
     <fieldset>
       <hr />
       <div>
-        <button type="submit" class="btn-lg btn btn-primary">Submit</button>
+        <button type="submit" id="submitButton" class="btn-lg btn btn-primary">Submit</button>
       </div>
     </fieldset>
   </form>
 </div>
+
+
+<script>
+  $(document).ready(function () {
+    // Function to check if all fields are filled out
+    function validateForm() {
+      let isValid = true;
+
+      // Remove previous error styles
+      $('input[type="text"], input[type="date"], input[type="tel"]').removeClass('is-invalid');
+
+      // Loop through each input element in the form
+      $('input[type="text"], input[type="date"], input[type="tel"]').each(function () {
+        if (!$(this).val()) {
+          isValid = false;
+          $(this).addClass('is-invalid');
+        }
+      });
+
+      return isValid;
+    }
+
+    // Attach a click event to the submit button
+    $('#submitButton').click(function () {
+      if (!validateForm()) {
+        alert('Please fill out the form.');
+        return false; // Prevent form submission if validation fails
+      }
+    });
+  });
+</script>
