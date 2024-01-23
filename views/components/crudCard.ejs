@@ -1,0 +1,58 @@
+<% data.forEach((entry) => { %>
+  <div class="card mb-3">
+    <div class="card-body">
+      <h1 class="card-title"><%= entry.NameOfCompany %></h1>
+      <h2 class="card-subtitle mb-2 text-muted">
+        <%= entry.DateOfIncorporation.toISOString().split('T')[0] %>
+      </h2>
+
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="viewForm('<%= entry.id %>')">
+          View Form
+        </button>
+        <button class="btn btn-warning" onclick="editForm('<%= entry.id %>')">
+          Edit Form
+        </button>
+        <button class="btn btn-danger" onclick="deleteForm('<%= entry.id %>')">
+          Delete Form
+        </button>
+        <button class="btn btn-secondary" onclick="toggleFields('<%= entry.id %>')">
+          Toggle Fields
+        </button>
+      </div>
+
+      <div class="fields-list mt-3" id="fields<%= entry.id %>" style="display: none;">
+        <ul>
+          <% Object.keys(entry).forEach((field) => { %>
+          <li>
+            <strong><%= field %>:</strong> <%= entry[field] %>
+          </li>
+          <% }); %>
+        </ul>
+      </div>
+    </div>
+  </div>
+<% }); %>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function viewForm(id) {
+    // Implement logic to view the form based on the entry id
+    console.log("View Form:", id);
+  }
+
+  function editForm(id) {
+    // Implement logic to edit the form based on the entry id
+    console.log("Edit Form:", id);
+  }
+
+  function deleteForm(id) {
+    // Implement logic to delete the form based on the entry id
+    console.log("Delete Form:", id);
+  }
+
+  function toggleFields(id) {
+    $('#fields' + id).toggle();
+  }
+</script>
