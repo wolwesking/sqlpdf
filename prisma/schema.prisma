@@ -12,7 +12,7 @@ datasource db {
 
 model DOC_LEAO {
   id                                  Int      @id @default(autoincrement())
-  NameOfCompany                       String
+  NameOfCompany                       String   
   Country                             String
   Website                             String
   PublicDeedNumber                    String
