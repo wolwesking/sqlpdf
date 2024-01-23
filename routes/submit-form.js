@@ -10,6 +10,7 @@ router.get('/', function(req, res, next) {
 router.post('/', async (req, res, next) => {
   const formData = req.body;
   const jsonData = JSON.stringify(formData, null, 2);
+  console.log(jsonData);
   await uploadLeao.uploadDocumentLeao(jsonData); // use await since the function is asynchronous
 
   res.send('Form submitted successfully');

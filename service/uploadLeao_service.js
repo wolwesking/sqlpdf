@@ -9,7 +9,7 @@ async function uploadDocumentLeao(dataJson) {
 
   try {
     // Use the 'create' method to insert a new user
-    const newEntry = await prisma.DOC_LEAO.create({
+    await prisma.dOC_LEAO.create({
       data: {
         NameOfCompany: dataJson.NameOfCompany,
         Country: dataJson.Country,
