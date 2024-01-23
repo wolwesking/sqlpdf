@@ -1179,10 +1179,11 @@
       let isValid = true;
 
       // Remove previous error styles
-      $('input[type="text"], input[type="date"], input[type="tel"]').removeClass('is-invalid');
+      $('input[type="text"], input[type="date"], input[type="tel"], input[type="number"]').removeClass('is-invalid');
+
 
       // Loop through each input element in the form
-      $('input[type="text"], input[type="date"], input[type="tel"]').each(function () {
+      $('input[type="text"], input[type="date"], input[type="tel"], input[type="number"]').each(function () {
         if (!$(this).val()) {
           isValid = false;
           $(this).addClass('is-invalid');
