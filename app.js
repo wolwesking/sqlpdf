@@ -8,7 +8,8 @@ const bodyParser = require('body-parser');
 
 var indexRouter = require('./routes/index');
 var adminRouter = require('./routes/admin');
-var formRouter = require('./routes/submit-form');
+var formRouter = require('./routes/submit-form-leao');
+var leao = require('./routes/leao');
 
 var app = express();
 
@@ -27,7 +28,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/admin', adminRouter);
-app.use('/submit-form', formRouter);
+app.use('/submit-form-leao', formRouter);
+app.use('/apertura-de-cuenta-persona-juridica', leao);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
